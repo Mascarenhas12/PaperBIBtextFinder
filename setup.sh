@@ -1,4 +1,5 @@
 #!/bin/bash
+#MADE BY MANUEL DUARTE MASCARENHAS - IST LEIC-T 2019
 
 pip3 install bs4
 pip3 install requests

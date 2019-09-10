@@ -1,3 +1,5 @@
+#MADE BY MANUEL DUARTE MASCARENHAS - IST LEIC-T 2019
+
 This is a program with the purpose of getting bibtex out of papers through web scrapping
 thus it will require internet and, in particular, it will require Google Chrome (you can change it code if you prefer another
 browser just be aware as bugs might appear if you change something you aren't supposed).
@@ -63,6 +65,6 @@ The Sources of Capital Misallocation
   institution={National Bureau of Economic Research}
 }
 
-If output correct than everything is setup correctly so just copy every paper onto papers(DON'T FORGET TO RENAME EACH PAPER TO IT'S 
+If output correct than everything is setup correctly so just copy every paper onto papers(DON'T FORGET TO RENAME EACH PAPER TO IT'S
 TITLE! IF IT'S A WORKING PAPER JUST ADD 'wp' TO THE END OF THE TITLE) folder, then do "chmod +x test.sh" in terminal.
 After that you can run the test.sh script and everything should be fine.

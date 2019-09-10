@@ -1,3 +1,5 @@
+#MADE BY MANUEL DUARTE MASCARENHAS - IST LEIC-T 2019
+
 import requests, sys, bs4, time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys

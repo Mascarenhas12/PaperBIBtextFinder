@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#MADE BY MANUEL DUARTE MASCARENHAS - IST LEIC-T 2019
+
 cd ./papers
 for i in *;
 	do
