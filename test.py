@@ -29,6 +29,13 @@ def get_bib(Bibhref):
     soup = get_soup(Bibhref)
     print(soup.prettify())
 
+"""
+-gets Chrome driver opened on google scholar after searching the requested papers
+-finds quote button by selector and clicks it
+-finds list of hyperlinks which contains href to bibtext
+-parses html page with bibtext and prints it
+"""
+
 def article(search):
     driver = q_search(search,False)
     #print(driver.current_url)
@@ -53,6 +60,12 @@ def article(search):
     driver.quit()
     sys.exit(0)
 
+"""
+This function was supposed to be needed however the original client later
+said that actually none of his papers were from the NBER site thus making this
+useless for him. Still functional nonetheless.
+"""
+
 def wp_article(search):
     driver = q_search(search,True)
 
@@ -68,10 +81,10 @@ def wp_article(search):
     sys.exit(0)
 
 #--------------------------------MAIN------------------------------------------#
-search = sys.argv[1]
-print(search +"\n")
-
-if("wp" in search):
-    wp_article(search.replace("wp",""))
+if(sys.argv[1].includes("-")):
+    search = sys.argv[1].split("-",1)[1]
 else:
-    article(search)
+    search = sys.argv[1]
+
+#print(search +"\n")
+article(search)
