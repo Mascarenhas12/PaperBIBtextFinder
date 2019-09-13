@@ -81,7 +81,7 @@ def wp_article(search):
     sys.exit(0)
 
 #--------------------------------MAIN------------------------------------------#
-if(sys.argv[1].includes("-")):
+if("-" in sys.argv[1]):
     search = sys.argv[1].split("-",1)[1]
 else:
     search = sys.argv[1]

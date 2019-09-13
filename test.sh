@@ -7,4 +7,5 @@ for i in *;
 	do
 		echo $i
 		python3 ../test.py "$i" >> ../res.txt
+		sleep 30
 done
